@@ -16,7 +16,7 @@ html/                  de site zelf (statische HTML/CSS)
 cron/                  scripts voor de deploy-container
   crontab              draait crontask.sh elk uur
   crontask.sh          cloont/pullt deze repo en kopieert html/ naar het volume
-  entrypoint_cron.sh   installeert de crontab en start cron
+  entrypoint_cron.sh   draait crontask.sh eenmalig, installeert de crontab en start cron
 Dockerfile             image voor de cron-container
 Docker-compose.yml     nginx + cron-container achter Traefik
 ```
