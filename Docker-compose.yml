@@ -4,7 +4,7 @@ services:
   web:
     image: nginx
     volumes:
-      - hi-religous-policies-html:/usr/share/nginx/html
+      - hi-eerste-vrouwen-gemeenteraad-1919-1923-html:/usr/share/nginx/html
     networks:
       - traefik-public
     labels:
@@ -17,10 +17,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - hi-religous-policies-html:/app/repo/html
+      - hi-eerste-vrouwen-gemeenteraad-1919-1923-html:/app/repo/html
 
 volumes:
-  hi-religous-policies-html:
+  hi-eerste-vrouwen-gemeenteraad-1919-1923-html:
 
 networks:
   traefik-public:
